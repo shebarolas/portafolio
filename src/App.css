@@ -10,3 +10,13 @@ body{
   background-color: #060417;
   font-family: 'Mulish', sans-serif;
 }
+.conteiner{
+  max-width: 1300px !important;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 1300px){
+    .conteiner{
+      padding: 0 1.5rem;
+    }
+}

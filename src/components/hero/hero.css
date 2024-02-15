@@ -1,0 +1,125 @@
+.hero-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.profile{
+    height: 20rem;
+    width: 20rem;
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+}
+.hero-container h2{
+    font-size: 3.2rem !important;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+.hero-container p{
+    width: 70%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+}
+.icons{
+    height: 3rem;
+    width: 3rem;
+    transition: all 0.3s ease;
+}
+.icons:hover, .profile:hover{
+    transform: translateY(-.5rem);
+}
+.hero-img{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.top{
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+.icon-pro{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: .5rem;
+    border: 1px solid #6852ba;
+}
+.hero-container::after, .hero-container::before{
+    content: " ";
+    width: 27rem;
+    height: 27rem;
+    border-radius: 29rem;
+    background: #7c66e3;
+    position: absolute;
+    z-index: -1;
+    filter: blur(255px);
+}
+.hero-container::after{
+    top: -2rem;
+    left: -5rem;
+}
+.hero-container::before{
+    bottom: -1rem;
+    right: 0;
+}
+
+@media (max-width: 1000px){
+   .hero-container h2{
+     font-size: 2.5rem !important;
+   }
+   .hero-container p {
+    font-size: 1.1rem !important;
+   }
+   .profile{
+    width: 15rem;
+    height: 15rem;
+   }
+   .icons{
+    height: 2rem;
+    width: 2rem;
+   }
+   .icon-pro{
+    height: 3rem;
+    width: 3rem;
+   }
+   .hero-container{
+    margin-top: 2rem;
+   }
+}
+@media (max-width: 764px){
+    .hero-container{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .hero-img{
+        margin: 3rem 0 3rem 0;
+    }
+    .hero-container h2{
+        margin-top: 2rem;
+    }
+    .hero-container h2, .hero-content{
+        text-align: center;
+        width: auto;
+    }
+    .hero-container::after, .hero-container::before{
+        content: " ";
+        height: 18rem;
+        width: 20rem;
+    }
+    .hero-container::after{
+        top: 0;
+        left: 0;
+    }
+    .hero-container::before{
+        bottom: 2rem;
+        right: 0;
+    }
+}

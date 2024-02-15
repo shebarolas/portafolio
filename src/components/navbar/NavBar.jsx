@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import './navBar.css'
 import { MobileNav } from './mobileNav/MobileNav';
+import logo from '../../assets/logo.png'
+
+
 
 
 export const NavBar = () => {
@@ -15,7 +18,7 @@ export const NavBar = () => {
       <MobileNav isOpne={isOpen} toggleMenu={toggleMenu}/>
       <div className='nav'>
         <div className="navContent">
-          <img className="logo" src="Logo" alt="logo" />
+          <img className="logo" src={logo} alt="logo" />
           <ul>
             <li><a className='menu-item'>Inicio</a></li>
             <li><a className='menu-item'>Skills</a></li>
