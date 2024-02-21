@@ -30,7 +30,9 @@
     width: 11px;
 }
 .skill-info-content::-webkit-scrollbar-track{
-    background-color: #ac96ff; /* Color del área de agarre de la barra de desplazamiento */
+    background-color: #ac96ff;
+     /* Color del área de agarre de la barra de desplazamiento */
+    border-radius: 5px;
 
 }
 .skill-info{

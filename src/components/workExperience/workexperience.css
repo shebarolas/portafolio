@@ -1,0 +1,13 @@
+.experience-container{
+    margin: 4rem 0;
+    position: relative;
+}
+.experience-container h5{
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+}
+@media (max-width: 768px) {
+    .experience-container h5{
+        text-align: center;
+    }
+}
