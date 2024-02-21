@@ -1,0 +1,76 @@
+.skills-info-card{
+    min-height: 23rem;
+    border: 1px solid #6751b9;
+    border-radius: .5rem;
+    background: rgba(22, 17, 47, 0.398);
+    backdrop-filter: blur(1rem);
+}
+.skills-info-card h6{
+    font-size: 1.2rem;
+    padding: .8rem 2rem;
+    background: linear-gradient(180deg, #ac96ff 0%, #7c5fe6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid #6751b9;
+    margin: 0;
+}
+.skill-info-content{
+    padding: 2rem;
+    height: 23rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.skill-info-content::-webkit-scrollbar{
+    width: 11px;
+}
+.skill-info-content::-webkit-scrollbar-thumb{
+    background-color: #6751b9; /* Color del área de agarre de la barra de desplazamiento */
+    border-radius: 2px; 
+    width: 11px;
+}
+.skill-info-content::-webkit-scrollbar-track{
+    background-color: #ac96ff; /* Color del área de agarre de la barra de desplazamiento */
+
+}
+.skill-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill-info .porcentaje{
+    color: #dd8cfa;
+}
+.skill-progress-bg{
+    width: 100%;
+    height: .5rem;
+    background: #382e68;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+.skill-progress{
+    width: 0%;
+    height: .5rem;
+    background: linear-gradient(90deg, #aa94fe -50%, #7d60c6 50%);
+    border-radius: .5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 945px){
+    .skills-content{
+        grid-template-columns: none;
+        grid-template-rows: none;
+        align-items: center;
+        justify-items: center;
+    }
+    .skills-info{
+        width: -webkit-fill-available;
+    }
+    .skill{
+        place-items: center;
+    }
+    .skills-info-card h6{
+        text-align: center;
+    }
+}
