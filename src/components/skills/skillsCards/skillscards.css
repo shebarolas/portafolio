@@ -39,7 +39,35 @@
 }
 @media (max-width: 764px){
     .skills-card{
-        width: 7rem;
+        width: 5rem;
         height: 2rem;
+    }
+    .skills-card span{
+        font-size: 1.2rem;
+    }
+    .skills-icon{
+        height: 3rem;
+        width: 3rem;
+    }
+    .icons{
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+}
+@media (max-width: 400px){
+    .skills-card{
+        width: 3rem !important;
+        height: 2rem !important;
+    }
+    .skills-card span{
+        font-size: .9rem !important;
+    }
+    .skills-icon{
+        height: 3rem;
+        width: 3rem;
+    }
+    .icons{
+        width: 2rem !important;
+        height: 2rem !important;
     }
 }
