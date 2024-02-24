@@ -39,9 +39,15 @@
 }
 
 @media (max-width: 779px) {
+    .contact-content{
+        gap: 0;
+    }
     .name-container{
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: none;
+    }
+    .form{
+        margin-bottom: 2rem;
     }
 }
