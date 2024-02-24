@@ -34,7 +34,7 @@ export const WorkExperience = () => {
 
     return (
         <div className='experience-container'>
-            <h5>Work Experience and Personal Proyects</h5>
+            <h5>Experiencia laboral y Proyectos Personales</h5>
             <div className="experience-content">
                 <div className="arrow-right" onClick={slideRight}>
                     <spam className="material-symbols-outlined">
